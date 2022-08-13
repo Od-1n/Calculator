@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: larger;
+}
+
+/* styling the input  */
+
+.input {
+    display: flex;
+    justify-content: center;
+}
+
+#input-value {
+    background-color: black;
+    height: 70px;
+    width: 400px;
+}
+
+/* I prefer to use buttons into divs and do flex box at every child of the divs */
+
+
+.first-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: none;
+
+}
+
+.second-row {
+    display: flex;
+    justify-content: center;
+}
+
+.third-row {
+    display: flex;
+    justify-content: center;
+}
+
+.midle-row {
+    display: flex;
+    justify-content: center;
+
+}
+
+.last-row {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* styling buttons of each divs */
+
+.button-operation {
+    width: 100px;
+    height: 100px;
+    background-color: #df974c;
+    color: white;
+}
+
+
+.button-calcul {
+    width: 100px;
+    height: 100px;
+    background-color: #d8d9db;
+}
+
+.button-zero-value {
+    width: 300px;
+    height: 100px;
+    background-color: #d8d9db;
+}
+
+.button-clear {
+    width: 200px;
+    height: 100px;
+    background-color: #d8d9db;
+}
