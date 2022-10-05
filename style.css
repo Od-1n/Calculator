@@ -1,79 +1,78 @@
 * {
     box-sizing: border-box;
-    font-family: monospace;
-    font-size: larger;
-}
-
-/* styling the input  */
-
-.input {
-    display: flex;
-    justify-content: center;
-}
-
-#input-value {
-    background-color: black;
-    height: 70px;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .calc {
     width: 400px;
-}
-
-/* I prefer to use buttons into divs and do flex box at every child of the divs */
-
-
-.first-row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-style: none;
-
-}
-
-.second-row {
-    display: flex;
-    justify-content: center;
-}
-
-.third-row {
-    display: flex;
-    justify-content: center;
-}
-
-.midle-row {
-    display: flex;
-    justify-content: center;
-
-}
-
-.last-row {
-    display: flex;
-    justify-content: center;
-}
-
-
-/* styling buttons of each divs */
-
-.button-operation {
-    width: 100px;
+    background-color: black;
+    color: white;   
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .screen {
+    color: white;
+    font-size: 40px;
+    font-family: "Courier New", Courier, monospace;
+    text-align: right;
+    padding: 20px 5px;
+  }
+  
+  .calc-button {
+    background-color: #d8d9db;
+    color: black;
     height: 100px;
+    width: 24.5%;
+    border: none;
+    border-radius: 0;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+  .calc-button:hover {
+    background-color: #ebebeb;
+  }
+  
+  .calc-button:active {
+    background-color: #bbbcbe;
+  }
+  
+  .double {
+    width: 49.7%;
+  }
+  
+  .triple {
+    width: 74.8%;
+  }
+  
+  .calc-button:last-child {
     background-color: #df974c;
     color: white;
-}
-
-
-.button-calcul {
-    width: 100px;
-    height: 100px;
-    background-color: #d8d9db;
-}
-
-.button-zero-value {
-    width: 300px;
-    height: 100px;
-    background-color: #d8d9db;
-}
-
-.button-clear {
-    width: 200px;
-    height: 100px;
-    background-color: #d8d9db;
-}
+  }
+  
+  .calc-button:last-child:hover {
+    background-color: #dfb07e;
+  }
+  
+  .calc-button:last-child:active {
+    background-color: #dd8d37;
+  }
+  
+  .calc-button-row {
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+    margin-bottom: 0.5%;
+  }
+  
+  .calc-button-row:last-child {
+    padding-bottom: 0;
+  }
+  
